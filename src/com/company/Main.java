@@ -11,7 +11,7 @@ public class Main {
 
         jFrame.setTitle("2048");
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        jFrame.setSize(450, 500);
+        jFrame.setSize(900, 1000);
         jFrame.setResizable(false);
         jFrame.add(controller.getView());
         jFrame.setLocationRelativeTo(null);

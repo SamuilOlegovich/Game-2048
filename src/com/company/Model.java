@@ -9,7 +9,7 @@ import java.util.*;
 
 // Он будет ответственен за все манипуляции производимые с игровым полем.
 public class Model {
-    private static final int FIELD_WIDTH = 4;
+    private static final int FIELD_WIDTH = 8;
     private Stack<Tile[][]> previousStates;              // предыдущие состояния игрового поля
     private Stack<Integer> previousScores;               // предыдущие счета
     boolean isSaveNeeded = true;
