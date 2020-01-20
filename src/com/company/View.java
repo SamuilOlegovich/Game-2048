@@ -22,11 +22,12 @@ public class View extends JPanel {
 
     @Override
     public void paint(Graphics g) {
+        int numberOfCells = controller.getModel().getFieldWidth();
         super.paint(g);
         g.setColor(BG_COLOR);
         g.fillRect(0, 0, this.getSize().width, this.getSize().height);
-        for (int x = 0; x < 8; x++) {
-            for (int y = 0; y < 8; y++) {
+        for (int x = 0; x < numberOfCells; x++) {
+            for (int y = 0; y < numberOfCells; y++) {
                 drawTile(g, controller.getGameTiles()[y][x], x, y);
             }
         }

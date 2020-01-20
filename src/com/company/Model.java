@@ -28,6 +28,10 @@ public class Model {
         this.score = 0;
     }
 
+    public int getFieldWidth() {
+        return FIELD_WIDTH;
+    }
+
     // выбирает лучший из возможных ходов и выполнять его
     public void autoMove() {
         PriorityQueue<MoveEfficiency> priorityQueue =
@@ -40,7 +44,6 @@ public class Model {
 
         priorityQueue.peek().getMove().move();
     }
-
 
     // принимает один параметр типа move, и возвращает объект типа MoveEfficiency
     //      описывающий эффективность переданного
